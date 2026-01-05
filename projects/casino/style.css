@@ -1,0 +1,1085 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- TOP BAR ---------- */
+.top{
+    width: 100%;
+    background-color: rgba(31, 3, 3, 0.941);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.div1{
+    display: flex;
+    gap: 20px;
+}
+
+.hi{
+    color: goldenrod;
+    font-weight: bold;
+}
+
+/* ---------- BOTTOM BAR ---------- */
+.bottom{
+    width: 100%;
+    background-color: rgb(31, 1, 1);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* ---------- LOGO ---------- */
+.logo{
+    display: flex;
+}
+
+.img{
+    padding: 10px;
+    background-color: goldenrod;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.hig{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+    color: goldenrod;
+    font-family: "Asimovian", sans-serif;
+}
+
+.sub{
+    font-size: 15px;
+    padding-left: 10px;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover{
+    opacity: 1;
+    color: goldenrod;
+}
+
+/* ---------- SEARCH ---------- */
+.serchbar{
+    width: 200px;
+    padding: 10px;
+    background-color: rgba(19, 19, 19, 0.594);
+    color: whitesmoke;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* ---------- USER / WALLET ---------- */
+.user{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.deposits{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(31, 1, 1);
+}
+
+.d1{
+    border: 1px solid goldenrod;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.dp{
+    background-color: goldenrod;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.us{
+    background-color: goldenrod;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:768px) {
+    .bottom{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* ---------- HERO SECTION ---------- */
+.hero{
+    width: 100%;
+    min-height: 90vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.9)
+    ), url("https://images.unsplash.com/photo-1511512578047-dfb367046420");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+}
+
+.hero-content{
+    max-width: 600px;
+    color: white;
+}
+
+.hero-tag{
+    color: goldenrod;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.hero h1{
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span{
+    color: goldenrod;
+}
+
+.hero-desc{
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.hero-btns{
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn.primary{
+    background-color: goldenrod;
+    color: black;
+}
+
+.btn.primary:hover{
+    background-color: #ffcc33;
+}
+
+.btn.secondary{
+    border: 2px solid goldenrod;
+    color: goldenrod;
+}
+
+.btn.secondary:hover{
+    background-color: goldenrod;
+    color: black;
+}
+
+/* ---------- HERO RESPONSIVE ---------- */
+@media (max-width:768px){
+    .hero{
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .hero-btns{
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+/* ---------- GAMES SECTION ---------- */
+.games{
+    width: 100%;
+    padding: 80px;
+    background-color: #0d0202;
+    color: white;
+}
+
+.games-head{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.games-tag{
+    color: goldenrod;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.games-head h2{
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.games-desc{
+    opacity: 0.7;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* ---------- GAME GRID ---------- */
+.games-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.game-card{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.game-card:hover{
+    transform: translateY(-10px);
+}
+
+.game-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------- OVERLAY ---------- */
+.game-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.9)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.game-card:hover .game-overlay{
+    opacity: 1;
+}
+
+.game-overlay h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.game-overlay a{
+    width: fit-content;
+    padding: 8px 18px;
+    background-color: goldenrod;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:768px){
+    .games{
+        padding: 50px 20px;
+    }
+
+    .games-head h2{
+        font-size: 30px;
+    }
+}
+
+/* ---------- LIVE CASINO SECTION ---------- */
+.live-casino{
+    width: 100%;
+    padding: 80px;
+    background: linear-gradient(
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.95)
+    ), url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.live-head{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.live-tag{
+    color: red;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.live-head h2{
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.live-desc{
+    opacity: 0.7;
+}
+
+/* ---------- LIVE GRID ---------- */
+.live-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* ---------- LIVE CARD ---------- */
+.live-card{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #111;
+    transition: transform 0.4s ease;
+}
+
+.live-card:hover{
+    transform: translateY(-10px);
+}
+
+.live-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* ---------- LIVE BADGE ---------- */
+.live-badge{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+/* ---------- LIVE INFO ---------- */
+.live-info{
+    padding: 20px;
+}
+
+.live-info h3{
+    margin-bottom: 5px;
+}
+
+.live-info p{
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.live-info a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.live-info a:hover{
+    background-color: #ffcc33;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:768px){
+    .live-casino{
+        padding: 50px 20px;
+    }
+
+    .live-head h2{
+        font-size: 30px;
+    }
+}
+/* ---------- PROMOTIONS SECTION ---------- */
+.promotions{
+    width: 100%;
+    padding: 80px;
+    background-color: #120303;
+    color: white;
+}
+
+.promo-head{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.promo-tag{
+    color: goldenrod;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.promo-head h2{
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.promo-desc{
+    opacity: 0.7;
+}
+
+/* ---------- PROMO GRID ---------- */
+.promo-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* ---------- PROMO CARD ---------- */
+.promo-card{
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        #1a0505,
+        #2a0a0a
+    );
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgba(218,165,32,0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.promo-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(218,165,32,0.3);
+}
+
+/* ---------- FEATURED CARD ---------- */
+.promo-card.gold{
+    background: linear-gradient(
+        135deg,
+        #3a2a00,
+        #b8860b
+    );
+    color: black;
+}
+
+.promo-card.gold a{
+    background-color: black;
+    color: goldenrod;
+}
+
+/* ---------- BADGES ---------- */
+.promo-badge{
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.promo-badge.vip{
+    background-color: black;
+    color: goldenrod;
+}
+
+/* ---------- TEXT ---------- */
+.promo-card h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.promo-value{
+    font-size: 28px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-bottom: 10px;
+}
+
+.promo-card.gold .promo-value{
+    color: black;
+}
+
+.promo-text{
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+/* ---------- BUTTON ---------- */
+.promo-card a{
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: goldenrod;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.promo-card a:hover{
+    background-color: #ffcc33;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:768px){
+    .promotions{
+        padding: 50px 20px;
+    }
+
+    .promo-head h2{
+        font-size: 30px;
+    }
+}
+/* ---------- BONUS SECTION ---------- */
+.bonus{
+    width: 100%;
+    padding: 80px;
+    background: linear-gradient(
+        135deg,
+        #120303,
+        #2a0505
+    );
+    color: white;
+}
+
+.bonus-wrapper{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ---------- LEFT ---------- */
+.bonus-left{
+    max-width: 550px;
+}
+
+.bonus-tag{
+    color: goldenrod;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.bonus-left h2{
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.bonus-left h2 span{
+    color: goldenrod;
+}
+
+.bonus-desc{
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+.bonus-list{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.bonus-list li{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* ---------- BUTTON ---------- */
+.bonus-btn{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: goldenrod;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.bonus-btn:hover{
+    background-color: #ffcc33;
+}
+
+/* ---------- RIGHT ---------- */
+.bonus-right{
+    display: flex;
+    justify-content: center;
+}
+
+.bonus-box{
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(
+        circle,
+        #ffd700,
+        #b8860b
+    );
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    box-shadow: 0 0 40px rgba(218,165,32,0.6);
+}
+
+.bonus-amount{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.bonus-text{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:768px){
+    .bonus{
+        padding: 50px 20px;
+    }
+
+    .bonus-wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bonus-left h2{
+        font-size: 36px;
+    }
+}
+/* ---------- VIP LOUNGE ---------- */
+.vip-lounge{
+    padding: 80px 20px;
+    background: radial-gradient(circle at top, #1a0505, #060000);
+    color: #fff;
+}
+
+.vip-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------- HEADER ---------- */
+.vip-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.vip-label{
+    color: goldenrod;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.vip-header h2{
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.vip-subtext{
+    opacity: 0.7;
+}
+
+/* ---------- TIERS ---------- */
+.vip-tiers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* ---------- CARD ---------- */
+.vip-tier{
+    background: linear-gradient(145deg, #111, #1d1d1d);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(218,165,32,0.25);
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.vip-tier:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(218,165,32,0.35);
+}
+
+.vip-tier h3{
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.vip-rank{
+    display: block;
+    font-size: 14px;
+    opacity: .7;
+    margin-bottom: 20px;
+}
+
+.vip-tier ul{
+    list-style: none;
+    margin: 30px 0;
+}
+
+.vip-tier ul li{
+    margin-bottom: 12px;
+}
+
+/* ---------- BUTTON ---------- */
+.vip-tier button{
+    padding: 14px 34px;
+    border: none;
+    border-radius: 30px;
+    background: goldenrod;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.vip-tier button:hover{
+    background: #ffcc33;
+}
+
+/* ---------- COLORS ---------- */
+.vip-silver{
+    background: linear-gradient(145deg, #444, #777);
+    color: #000;
+}
+
+.vip-gold{
+    background: linear-gradient(145deg, #b8860b, #ffd700);
+    color: #000;
+}
+
+.vip-platinum{
+    background: linear-gradient(145deg, #0e0e0e, #2c2c2c);
+}
+
+/* ---------- HIGHLIGHT ---------- */
+.vip-highlight{
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: crimson;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px){
+    .vip-header h2{
+        font-size: 32px;
+    }
+}
+/* ---------- TOURNAMENTS SECTION ---------- */
+.tournaments{
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0b0000, #1a0505);
+    color: #fff;
+}
+
+.tournament-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------- HEADER ---------- */
+.tournament-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.tournament-tag{
+    color: goldenrod;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.tournament-header h2{
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.tournament-sub{
+    opacity: 0.7;
+}
+
+/* ---------- GRID ---------- */
+.tournament-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* ---------- CARD ---------- */
+.tournament-card{
+    position: relative;
+    background: linear-gradient(145deg, #121212, #1f1f1f);
+    border-radius: 20px;
+    padding: 35px;
+    border: 1px solid rgba(218,165,32,0.25);
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.tournament-card:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(218,165,32,0.35);
+}
+
+.tournament-card h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tournament-prize{
+    color: goldenrod;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* ---------- STATUS ---------- */
+.tournament-status{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: crimson;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tournament-status.upcoming{
+    background: #444;
+}
+
+/* ---------- INFO ---------- */
+.tournament-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    opacity: .8;
+    margin-bottom: 25px;
+}
+
+/* ---------- BUTTON ---------- */
+.tournament-card button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: goldenrod;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.tournament-card button:hover{
+    background: #ffcc33;
+}
+
+/* ---------- ACTIVE ---------- */
+.tournament-card.active{
+    border-color: goldenrod;
+    box-shadow: 0 0 30px rgba(218,165,32,.5);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:768px){
+    .tournament-header h2{
+        font-size: 32px;
+    }
+}
+/* ---------- FOOTER ---------- */
+.site-footer{
+    background: linear-gradient(180deg, #0a0000, #000);
+    color: #ccc;
+    padding: 70px 20px 30px;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+/* ---------- BRAND ---------- */
+.footer-brand h3{
+    color: goldenrod;
+    margin: 10px 0;
+}
+
+.footer-logo{
+    font-size: 40px;
+    background: goldenrod;
+    color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-brand p{
+    font-size: 14px;
+    opacity: .8;
+}
+
+/* ---------- LINKS ---------- */
+.footer-links h4,
+.footer-newsletter h4{
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-links a{
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.footer-links a:hover{
+    color: goldenrod;
+}
+
+/* ---------- NEWSLETTER ---------- */
+.footer-newsletter p{
+    font-size: 14px;
+    opacity: .8;
+    margin-bottom: 15px;
+}
+
+.newsletter-box{
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-box input{
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.newsletter-box button{
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background: goldenrod;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter-box button:hover{
+    background: #ffcc33;
+}
+
+/* ---------- BOTTOM ---------- */
+.footer-bottom{
+    max-width: 1200px;
+    margin: 40px auto 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.footer-note{
+    opacity: .7;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:768px){
+    .footer-bottom{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

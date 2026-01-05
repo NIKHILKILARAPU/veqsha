@@ -1,0 +1,490 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #9e9e0d, #ffd000);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cityname {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+}
+
+.nav {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.nav:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: scale(1.05);
+}
+
+
+.em {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #d32f2f;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.em:hover {
+    background-color: #b71c1c;
+}
+
+.txt {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.img1 {
+    background-image: url("elr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.insideimg {
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.imgline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.img {
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.hero {
+    flex: 1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.btn {
+    display: inline-block;
+    background: #ffd000;
+    color: #333;
+    font-weight: bold;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+}
+
+.aboutcity {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.aboutcity iframe {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.p1 {
+    flex: 1;
+    min-width: 300px;
+}
+
+.p1 h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.p1 p, li {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #555;
+}
+
+ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.place-to-visit {
+    padding: 50px 20px;
+    background-color: #fefefe;
+}
+
+.place-to-visit h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.blockline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.block {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.block.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.block:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.matter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.55);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    transition: 0.3s;
+}
+
+.matter p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.h {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.food-culture {
+    width: 100%;
+    background: url("f1.png") center/cover no-repeat;
+}
+
+.inside {
+    background-color: rgba(0,0,0,0.75);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.food-culture h1 {
+    font-size: 38px;
+    color: #ffd000;
+    margin-bottom: 25px;
+}
+
+.food-culture p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: auto;
+}
+
+.festiv {
+    background: url("amma.png") center/cover no-repeat;
+    padding: 80px 20px;
+}
+
+.festiv h1 {
+    color: #ffd000;
+    font-size: 38px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.festiv p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: auto;
+}
+.img2{
+    animation: slideright 2s ease-in-out;
+}
+@keyframes slideright{
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.img3{
+    animation: slideleft 2s ease-in-out;
+}
+@keyframes slideleft{
+    0%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.footer {
+    background-color: #111;
+    color: #f1f1f1;
+    padding: 60px 20px 30px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-sec {
+    width: 23%;
+    min-width: 200px;
+}
+
+.footer-sec h3,
+.footer-sec h4 {
+    color: #ffd000;
+}
+
+.footer-sec ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-sec ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-sec ul li a:hover {
+    color: #ffd000;
+    padding-left: 5px;
+}
+
+.social a {
+    font-size: 22px;
+    color: #f1f1f1;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #ffd000;
+    transform: scale(1.2);
+}
+
+.copy {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+@media(max-width: 1200px) {
+    .block { width: 45%; }
+}
+
+@media(max-width: 768px) {
+    .block { width: 100%; }
+    .header { flex-direction: column; gap: 15px; }
+    .navbar { flex-direction: column; gap: 10px; width: 100%; }
+    .aboutcity { flex-direction: column; gap: 30px; }
+    .insideimg { flex-direction: column; align-items: center; }
+}
+.b1{
+ background-image: url("bim1.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-bottom: 20px;
+}
+.b2{
+ background-image: url("bim4.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-bottom: 20px;
+}
+.b3{
+ background-image: url("bim3.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-bottom: 20px;
+}
+.b4{
+ background-image: url("bim2.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-bottom: 20px;
+}
+.b5{
+ background-image: url("bim5.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-bottom: 20px;
+}
+.b6{
+ background-image: url("bim6.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-bottom: 20px;
+}
+.c1{
+ background-image: url("cim1.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-bottom: 20px;
+}
+.c2{
+ background-image: url("cim2.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-bottom: 20px;
+}
+.c3{
+ background-image: url("cim3.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-bottom: 20px;
+}
+.c4{
+ background-image: url("cim4.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-bottom: 20px;
+}

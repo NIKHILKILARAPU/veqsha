@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div class="subheader1">
+                <img src="logo.png" alt="">
+                <p>Sri Varaha Lakshmi Narasimha Swamy Devastanam</p>
+            </div>
+            <div class="navbar">
+                <a href="index.html" >Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="gal.html">Gallery</a>
+                <a href="book.html"> Darshanam Tickets</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero1">
+                <div class="subhero">
+                    <img src="swamy.jpg" alt="">
+                    <p>శ్రీ లక్ష్మీనరసింహ స్వామి <br> దేవస్థానం కి స్వాగతం</p>
+                </div>
+                <a href="book.html" class="book">Book a Special Darshna</a>
+
+            </div>
+
+        </div>
+        <div class="history">
+            <h1 class="hr">Our History</h1>
+            <div class="subhistory">
+                <div class="matter">
+                    <p class="p1">Simhachalam Temple is located in Vishakhapatnam (Vizag) of Andhra Pradesh, dedicated to Lord
+                        Narasimha Swamy, an incarnation of Lord Vishnu. The temple name is derived from "Simha"- a lion
+                        and "Achala"- a hill</p>
+                    <p class="p2">
+                        The deity is in the tribhangi posture, with the head of a lion on a human torso. The temple has
+                        16-pillared Natyamandapa and 96-pillared Kalyanamandapa. The idol is covered with sandalwood
+                        throughout the year and is revealed only once a year which is celebrated as Chandanotsavam
+                    </p>
+                    <a href="aboutus.html" class="view">
+                        View Full History
+                    </a>
+                </div>
+                <div><img src="god.png" alt="" class="imggod"></div>
+
+            </div>
+        </div>
+
+        <div class="gal">
+            <h1 class="temp">Temple Gallery</h1>
+            <div class="line1">
+                <img src="im1.png" alt=""class="im1">
+                <img src="im2.png" alt=""class="im2">
+            </div>
+            <div class="line1">
+                <img src="im3.png" alt=""class="im3">
+                <img src="im4.png" alt=""class="im4">
+            </div>
+            <a href="gal.html"class="book1">View full Gallery</a>
+    
+    
+        </div>
+        <div class="footer">
+    <div class="footer-container">
+
+        <div class="footer-section about">
+            <h3>Sri Varaha Lakshmi Narasimha Swamy Temple</h3>
+            <p>
+                A sacred divine place located on the hill of Simhachalam, dedicated to Lord Narasimha Swamy.
+                Experience devotion, culture, and tradition.
+            </p>
+        </div>
+
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="gal.html">Gallery</a>
+            <a href="book.html">Darshanam Tickets</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>📍 Simhachalam, Visakhapatnam, Andhra Pradesh</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ templeoffice@simhachalam.org</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Sri Varaha Lakshmi Narasimha Swamy Temple — All Rights Reserved
+    </div>
+</div>
+
+    </div>
+
+
+</body>
+<script>
+    const animatedElements = document.querySelectorAll(".book, .hr,.p1,.p2,.view,.imggod,.temp,.line1");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    animatedElements.forEach(el => observer.observe(el));
+
+</script>
+
+</html>

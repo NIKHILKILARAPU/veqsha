@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="aboutuc.css">
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div class="subheader1">
+                <img src="logo.png" alt="">
+                <p>Sri Varaha Lakshmi Narasimha Swamy Devastanam</p>
+            </div>
+            <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="gal.html">Gallery</a>
+            <a href="book.html">Darshanam Tickets</a>
+            <a href="contact.html">Contact</a>
+
+            </div>
+        </div>
+        <div class="abt">
+            <h1>About Our Temple</h1>
+            <p>Our history, mission and spritual tradition</p>
+
+        </div>
+        <div class="history">
+            <h1 class="hr">Our History</h1>
+            <div class="subhistory">
+                <div class="matter">
+                    <p class="p1">Simhachalam Temple is located in Vishakhapatnam (Vizag) of Andhra Pradesh, dedicated
+                        to Lord
+                        Narasimha Swamy, an incarnation of Lord Vishnu. The temple name is derived from "Simha"- a lion
+                        and "Achala"- a hill</p>
+                    <p class="p2">
+                        The deity is in the tribhangi posture, with the head of a lion on a human torso. The temple has
+                        16-pillared Natyamandapa and 96-pillared Kalyanamandapa. The idol is covered with sandalwood
+                        throughout the year and is revealed only once a year which is celebrated as Chandanotsavam
+                    </p>
+
+                </div>
+                <div><img src="god.png" alt="" class="imggod"></div>
+
+            </div>
+            <div class="div2">
+                <div class="m1">
+                    <h3>The Legend of Prahalad</h3>
+                    <p>
+                        Hiranyakasipu, to avenge the death of his brother Hiranyaksha, performed austerities to seek
+                        immortality from Lord Brahma. Lord Brahma grants him a boon that he could not be killed by
+                        animals or man. Hiranyakasipu then starts troubling gods, sages, and worshipers of Lord Vishnu
+                    </p>
+                    <p>
+                        Hiranyakasipu's son Prahalad was a devotee of Lord Vishnu. Angered by Prahalad's devotion,
+                        Hiranyakasipu orders his servants to drown his son in the sea and place mount Simhadri over him.
+                        However, Lord Narayana rescues Prahalada and places Simhadri at the rescue site. Lord Narasimha
+                        kills Hiranyakasipu, after which Prahalad builts Simhachalam Temple</p>
+
+                </div>
+            </div>
+            <div class="div3">
+                <p>
+
+                    Legend has it that Pururava, and his wife Urvasi, were drawn to Simhachalam. That is when they
+                    discover the ancient shrine in ruins after many centuries. They rescue the deity and cover it with
+                    sandal paste after they receive a message from heaven. According to the message, the Lord is only to
+                    be worshipped in this form and the original form should only be revealed once per year. The temple
+                    was reconstructed and has remained ever since
+                </p>
+
+            </div>
+        
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+
+                <div class="footer-section about">
+                    <h3>Sri Varaha Lakshmi Narasimha Swamy Temple</h3>
+                    <p>
+                        A sacred divine place located on the hill of Simhachalam, dedicated to Lord Narasimha Swamy.
+                        Experience devotion, culture, and tradition.
+                    </p>
+                </div>
+
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="gal.html">Gallery</a>
+            <a href="book.html">Darshanam Tickets</a>
+            <a href="contact.html">Contact</a>
+
+                </div>
+
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>📍 Simhachalam, Visakhapatnam, Andhra Pradesh</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>✉️ templeoffice@simhachalam.org</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2025 Sri Varaha Lakshmi Narasimha Swamy Temple — All Rights Reserved
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const animatedElements = document.querySelectorAll(".book, .hr,.p1,.p2,.view,.imggod,.temp,.line1");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    animatedElements.forEach(el => observer.observe(el));
+
+</script>
+
+</html>

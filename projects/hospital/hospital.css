@@ -1,0 +1,269 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #e6f2f8;
+  color: #0a2a3a;
+}
+
+/* ========== HEADER ========== */
+#header {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(0, 40, 60, 0.55),
+      rgba(0, 40, 60, 0.55)
+    ),
+    url("rm1.jpg") center / cover no-repeat;
+}
+
+/* top line */
+.hdline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.logo {
+  width: 150px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.hp {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #444;
+}
+
+.calllogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.number {
+  font-weight: bold;
+  color: #06445c;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 12px;
+  background: rgba(6, 68, 92, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navitems {
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+}
+
+.navitems::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.3s;
+}
+
+.navitems:hover::after {
+  width: 100%;
+}
+
+/* ========== HERO QUOTE ========== */
+.quotediv {
+  max-width: 420px;
+  margin: 120px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.quote {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* ========== LOCATIONS ========== */
+.locationhead {
+  margin-top: 30px;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.locationline {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.vjmain, .vjmg, .ong, .gnt {
+  width: 220px;
+  height: 150px;
+  border-radius: 12px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.vjmain { background-image: url("rmvm.jpg"); }
+.vjmg   { background-image: url("rmmg.jpg"); }
+.ong    { background-image: url("rmog.jpg"); }
+.gnt    { background-image: url("rmgnt.jpg"); }
+
+.insideblock {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.insideblock:hover {
+  background: rgba(6, 68, 92, 0.85);
+}
+
+.details {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ========== CONTENT CARDS ========== */
+.aboutus,
+.special,
+.appointment {
+  width: 92%;
+  margin: 30px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.about,
+.spname,
+.bkap {
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* ========== SPECIALITIES ========== */
+.line {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.b1 {
+  height: 200px;
+  border-radius: 14px;
+  background: #06445c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.b1:hover {
+  transform: translateY(-8px);
+  background: #012d3e;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.specialname {
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ========== APPOINTMENT ========== */
+.inptline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.inpfeald,
+#txtarea {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 14px;
+  border-radius: 20px;
+  border: none;
+  background: #eef6fb;
+}
+
+.submit {
+  max-width: 500px;
+  margin: auto;
+  padding: 12px;
+  border-radius: 20px;
+  background: #06445c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit:hover {
+  background: #012d3e;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background: #033f57;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.cpy2025 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.follow a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}

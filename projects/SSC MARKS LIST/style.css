@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.firstdiv{
+    background-color: rgb(186, 233, 252);
+    width: 65%;
+}
+.mainheader {
+    font-family: "Gideon Roman", serif;
+    font-weight: bolder;
+    font-size: 24;
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    color: rgb(180, 34, 58);
+}
+.subheader {
+    font-family: "PT Serif", serif;
+    font-weight: 600;
+    font-size: 18;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    color: rgb(180, 34, 58);
+    margin-top: -20px;
+}
+.qr{
+    margin-top: -15px;
+    margin-left: 25px;
+    width: 100px;
+}
+.headerdiv{
+    display: flex;
+}
+.ssclogo{
+    width: 100px;
+    margin-left: 190px;
+    
+
+
+}
+.logosub{
+    font-family: "roboto", sans-serif;
+    font-weight: bold;
+    color: rgb(243, 108, 59);
+    font-size: 18;
+    word-spacing: 10;
+    letter-spacing: 2;
+    margin-left: 60px;
+}
+.logosubfooter{
+    display: flex;
+    
+}
+.myself{
+    width: 150;
+    margin-top: -20;
+    margin-left: 40px;
+}
+.childid{
+    margin-left: 40px;
+    font-weight: bold;
+}
+.seconddiv{
+    background-color: rgb(254, 225, 235);
+    margin-top: -20;
+    border-top: 1px solid rgb(198, 47, 103) ;
+    width: 65%;
+    border-bottom: 1px solid  rgb(198, 47, 103);
+}
+.lefty{
+    color: rgb(231, 48, 109);
+    font-weight: 2;
+    margin-left: 20px;
+}
+.righty{
+    font-weight: bold;
+    margin-left: 10px;
+}
+tr{
+    border: none;
+    
+}
+td{
+    font-weight: bold;
+    text-align: center;
+}
+.thirddiv{
+    background-color:rgb(186, 233, 252) ;
+    margin-top: -16px;
+    width: 65%;
+}
+.thirddiv_header{
+    padding-top: 5px;
+    text-align: center;
+    color: rgb(180, 34, 58) ;
+    font-weight: bold;
+}
+.marks_table{
+    border: 2px solid rgb(198, 47, 103);
+    width: 95%;
+    border-collapse: collapse;
+    height: 100%;
+    row-gap: 2px;
+    margin-left: 20px;
+    
+    
+    
+
+}
+.mrksrow{
+    background-color:  rgb(254, 225, 235);
+    border: 1px solid  rgb(254, 225, 235);
+    
+    
+}
+td{
+    
+}
+.molesdiv{
+    background-color:  rgb(251, 200, 217);
+    margin-top: 2px;
+    border: 1px solid rgb(198, 47, 103);
+    height: 15%;
+    width: 95%;
+    margin-left: 20px;
+}
+.signarea{
+    color:rgb(198, 47, 103) ;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 90px;
+    
+}
+#a{
+    margin-top: -20px;
+}
+#b{
+    margin-top: -10px;
+    word-spacing: 5px;
+}
+.footer{
+    display: flex;
+}
+tr td:first-of-type{
+    color: rgb(231, 48, 109) ;
+}
+.qr2{
+    width: 100px;
+    margin-top: 50px;
+    height: 100px;
+    margin-left: 110px;
+}

@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <style>
+        .fast-cash {
+            width: 180px;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+        }
+
+        .fast-cash h3 {
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+
+        .cash-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2px;
+        }
+
+        .cash-grid button {
+            font-size: 7px;
+            padding: 4px;
+            border: none;
+            border-radius: 5px;
+            background: #1e90ff;
+            color: white;
+            cursor: pointer;
+        }
+
+        .cash-grid button:hover {
+            background: #0b5ed7;
+        }
+
+        #msg {
+            font-size: 9px;
+            margin-top: 3px;
+            color: green;
+            font-weight: bold;
+        }
+
+        .fast-cash a {
+            display: block;
+            margin-top: 8px;
+            font-size: 9px;
+            background: #dc3545;
+            padding: 5px;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fast-cash">
+        <h3>FAST CASH</h3>
+
+        <div class="cash-grid">
+            <button>$500</button>
+            <button>$1000</button>
+            <button>$2000</button>
+            <button>$5000</button>
+        </div>
+
+        <p id="msg">Select an amount</p>
+
+        <a href="atm1.html">BACK</a>
+    </div>
+
+</body>
+<script>
+    const buttons = document.querySelectorAll(".cash-grid button");
+    const msg = document.getElementById("msg");
+
+    buttons.forEach(btn => {
+        btn.onclick = () => {
+            msg.innerText =  btn.innerText + " withdrawn successfully!";
+        };
+    });
+</script>
+
+</html>

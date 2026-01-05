@@ -1,0 +1,686 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    width: 100%;
+    height: min-content;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(12, 12, 66);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header img {
+    width: 125px;
+    margin-top: -10px;
+}
+
+.navbar {
+    width: 45%;
+    display: flex;
+    padding-right: 20px;
+    padding-top: 30px;
+    justify-content: space-between;
+
+}
+
+.navbar a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: rgb(194, 106, 6);
+    width: max-content;
+    height: min-content;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+.hero {
+    background-image: url("bg.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+.hero-content {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(137, 11, 32, 0.765), rgba(233, 233, 39, 0.637));
+    padding-top: 2%;
+}
+
+.hh1 {
+    text-align: center;
+    font-size: 100px;
+    color: rgb(126, 10, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.hh2 {
+    text-align: center;
+    font-size: 100px;
+    background: linear-gradient(to right, rgb(39, 210, 233), rgba(137, 11, 32));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.hh3 {
+    text-align: center;
+    font-size: 25px;
+    width: 50%;
+    margin: auto;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 1;
+}
+
+.div1 {
+    width: 25%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.b1 {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.b2 {
+    color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0);
+    border: 2px solid rgba(245, 245, 245, 0.584);
+    border-radius: 30px
+}
+
+.div2 {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.rides {
+    width: 100%;
+    padding: 80px 5%;
+    background: linear-gradient(to bottom,
+            rgb(12, 12, 66),
+            rgb(40, 10, 80));
+}
+
+.rides-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    background: linear-gradient(to right, orange, aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rides-sub {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.rides-container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.ride-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+    backdrop-filter: blur(6px);
+}
+
+.ride-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.ride-card h2 {
+    color: orange;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.ride-card p {
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px 20px 25px;
+    font-size: 15px;
+}
+
+.ride-card:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+.view-all{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+/* ================= TICKETS SECTION ================= */
+.tickets{
+    width: 100%;
+    padding: 90px 6%;
+    background: linear-gradient(
+        to bottom,
+        rgb(40, 10, 80),
+        rgb(12, 12, 66)
+    );
+}
+
+.tickets-title{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    background: linear-gradient(to right, gold, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tickets-sub{
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.ticket-cards{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+/* Ticket Card */
+.ticket-card{
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 25px;
+    padding: 35px 25px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    transition: 0.4s;
+    position: relative;
+}
+
+.ticket-card h2{
+    color: aqua;
+    font-size: 26px;
+}
+
+.ticket-card .age{
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.ticket-card h1{
+    font-size: 50px;
+    color: orange;
+    margin: 20px 0;
+}
+
+.ticket-card ul{
+    list-style: none;
+    margin: 25px 0;
+}
+
+.ticket-card ul li{
+    color: whitesmoke;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+/* Button */
+.ticket-btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 35px;
+    background: orange;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.ticket-btn:hover{
+    background: white;
+}
+
+/* Popular Card */
+.popular{
+    transform: scale(1.08);
+    border: 2px solid orange;
+}
+
+.popular .tag{
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: orange;
+    color: black;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Hover */
+.ticket-card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+/* ================= ABOUT SECTION ================= */
+.about{
+    width: 100%;
+    padding: 100px 6%;
+    background: linear-gradient(
+        to bottom,
+        rgb(12, 12, 66),
+        rgb(40, 10, 80)
+    );
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* Text */
+.about-text{
+    flex: 1;
+    min-width: 320px;
+}
+
+.about-text h1{
+    font-size: 55px;
+    font-weight: bolder;
+    background: linear-gradient(to right, orange, aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-text p{
+    color: whitesmoke;
+    margin-top: 20px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.about-points{
+    display: flex;
+    gap: 40px;
+    margin-top: 35px;
+}
+
+.about-points div{
+    text-align: center;
+}
+
+.about-points h2{
+    font-size: 40px;
+    color: orange;
+}
+
+.about-points span{
+    color: #ddd;
+    font-size: 14px;
+}
+
+/* Button */
+.about-btn{
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 40px;
+    background: orange;
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.about-btn:hover{
+    background: white;
+}
+
+/* Image */
+.about-img{
+    flex: 1;
+    min-width: 320px;
+    text-align: center;
+}
+
+.about-img img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+    transition: 0.4s;
+}
+
+.about-img img:hover{
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media(max-width: 900px){
+    .about-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-points{
+        justify-content: center;
+    }
+}
+/* ================= CONTACT SECTION ================= */
+.contact{
+    width: 100%;
+    padding: 100px 6%;
+    background: linear-gradient(
+        to bottom,
+        rgb(40, 10, 80),
+        rgb(12, 12, 66)
+    );
+}
+
+.contact-title{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+    background: linear-gradient(to right, aqua, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-sub{
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+/* Container */
+.contact-container{
+    margin-top: 60px;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* Info Section */
+.contact-info{
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h2{
+    color: orange;
+    font-size: 28px;
+}
+
+.contact-info p{
+    color: whitesmoke;
+    margin: 20px 0 30px;
+    line-height: 1.6;
+}
+
+.info-box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-box span{
+    font-size: 28px;
+}
+
+.info-box h4{
+    color: aqua;
+    font-size: 16px;
+}
+
+.info-box p{
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+/* Form */
+.contact-form{
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 35px;
+    border-radius: 25px;
+    backdrop-filter: blur(6px);
+}
+
+.contact-form h2{
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.contact-form textarea{
+    resize: none;
+}
+
+.contact-form button{
+    width: 100%;
+    padding: 14px;
+    background: orange;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover{
+    background: white;
+}
+
+/* Responsive */
+@media(max-width: 900px){
+    .contact-container{
+        flex-direction: column;
+    }
+}
+/* ================= FOOTER ================= */
+.footer{
+    background: rgb(8, 8, 40);
+    padding: 70px 6% 20px;
+    color: whitesmoke;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+/* Footer Box */
+.footer-box img{
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.footer-box p{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.footer-box h3{
+    color: orange;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-box ul{
+    list-style: none;
+}
+
+.footer-box ul li{
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.footer-box ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover{
+    color: aqua;
+    padding-left: 5px;
+}
+
+/* Social Icons */
+.social-icons{
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    color: orange;
+    transform: scale(1.2);
+}
+
+.newsletter{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Bottom */
+.footer-bottom{
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 40px;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+/* ================= GLOBAL LINK HOVER ================= */
+.navbar a:hover{
+    color: orange;
+    transition: 0.3s;
+}
+
+/* ================= BUTTON HOVERS ================= */
+.b1:hover{
+    background-color: white;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.b2:hover{
+    background-color: rgba(255,255,255,0.15);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: orange;
+    box-shadow: 0 0 15px rgba(255,165,0,0.7);
+    transition: 0.3s;
+}
+
+.ride-card:hover img{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+/* ================= TICKET CARD HOVER ================= */
+.ticket-card:hover h1{
+    color: gold;
+    transition: 0.3s;
+}
+
+.ticket-card:hover{
+    cursor: pointer;
+}
+
+.about-img img:hover{
+    filter: brightness(1.1);
+}
+
+/* ================= CONTACT FORM INPUT HOVER ================= */
+.contact-form input:hover,
+.contact-form textarea:hover{
+    box-shadow: 0 0 10px rgba(255,165,0,0.6);
+    transition: 0.3s;
+}
+
+/* ================= FOOTER LINK HOVER ================= */
+.footer-box ul li:hover{
+    color: orange;
+    transition: 0.3s;
+}
+
+/* ================= SOCIAL ICON HOVER ================= */
+.social-icons a:hover{
+    text-shadow: 0 0 10px orange;
+}

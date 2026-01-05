@@ -1,0 +1,293 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f7f5;
+  color: #1e1e1e;
+}
+
+/* ---------- HERO BACKGROUND ---------- */
+#imgbg {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+}
+
+.ap {
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.dp {
+  font-size: 18px;
+  color: #e6e6e6;
+  letter-spacing: 2px;
+}
+
+.aplogo {
+  width: 90px;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 12px;
+  background: linear-gradient(90deg, #1f7a1f, #2fa84f);
+}
+
+.nav {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.nav:hover::after {
+  width: 100%;
+}
+
+/* ---------- INFO BAR ---------- */
+.info {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #eef3ee;
+  font-weight: 600;
+}
+
+.flash {
+  width: 100px;
+  color: #1f7a1f;
+}
+
+.mq {
+  font-size: 15px;
+}
+
+/* ---------- SLOGAN ---------- */
+.slogan {
+  font-size: 52px;
+  font-weight: 900;
+  text-align: center;
+  margin: 60px 20px;
+  color: #145214;
+}
+
+/* ---------- ABOUT ---------- */
+.aboutus {
+  padding: 50px 20px;
+  background:
+    linear-gradient(rgba(0, 70, 0, 0.65), rgba(0, 70, 0, 0.65)),
+    url("grass.jpg");
+  background-size: cover;
+  color: #ffffff;
+}
+
+.abtus,
+.vision {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.abtusmatter {
+  max-width: 900px;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+/* ---------- SCHEMES ---------- */
+.schemes {
+  padding: 50px 20px;
+  background:
+    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+    url("farmer.jpg");
+  background-size: cover;
+}
+
+.scheme_header {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #145214;
+}
+
+.schdiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.schlist {
+  background: #ffffff;
+  padding: 15px;
+  border-left: 5px solid #2fa84f;
+  font-weight: 700;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.schlist:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ---------- GALLERY ---------- */
+.gallery {
+  padding: 40px 20px;
+  background: #f0f5f0;
+}
+
+.g1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #145214;
+}
+
+.category {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: 220px;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.block:hover {
+  transform: scale(1.06);
+}
+
+.blockimg {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cropname {
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* ---------- REPORT ---------- */
+.final {
+  background:
+    linear-gradient(rgba(0,70,0,0.7), rgba(0,70,0,0.7)),
+    url("grass.jpg");
+  background-size: cover;
+}
+
+.report {
+  padding: 50px 20px;
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.rt {
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+}
+
+.e-mail,
+#problem {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+}
+
+.submit {
+  background: #2fa84f;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit:hover {
+  background: #1f7a1f;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background: #0f2f0f;
+  color: #ffffff;
+  padding: 30px 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.fdt {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.cpy {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}

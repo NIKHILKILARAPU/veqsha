@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+}
+.maindiv {
+    position: relative;   
+    width: 400px;         
+}
+
+.atm-img {
+    width: 100%;
+    display: block;
+}
+
+#fr {
+    position: absolute;
+    top: 121px;           
+    left: 105px;           
+    width: 190px;         
+    height: 110px;        
+    border: none;
+    background-color: whitesmoke;
+}

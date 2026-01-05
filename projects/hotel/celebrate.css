@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ================= HEADER ================= */
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(245,245,245,0.4);
+    padding-bottom: 6px;
+}
+
+.htname {
+    color: gold;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.lc {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.location {
+    color: gold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+
+.navline {
+    width: 65%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navitems {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+
+
+
+.bookbutton {
+    position: absolute;
+    right: 10px;
+}
+
+.btn {
+    color: black;
+    background-color: #b7cdc2;
+    border-radius: 10px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: gold;
+}
+/* ================= CELEBRATE PAGE ================= */
+.celebrate-page {
+    background-color: #0f0f0f;
+    color: #ddd;
+}
+
+/* HERO */
+.celebrate-hero {
+    height: 70vh;
+    background: url("celebrate.png") center/cover no-repeat;
+    position: relative;
+}
+
+.celebrate-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.celebrate-overlay h1 {
+    font-size: 58px;
+    letter-spacing: 8px;
+    color: gold;
+}
+
+.celebrate-overlay p {
+    font-size: 18px;
+    margin-top: 12px;
+    color: #ccc;
+}
+
+/* EVENTS */
+.celebrate-events {
+    padding: 90px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+/* CARD */
+.event-card {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.event-card.reverse {
+    flex-direction: row-reverse;
+}
+
+/* IMAGE */
+.event-card img {
+    width: 50%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 22px;
+    transition: transform 0.6s ease;
+}
+
+.event-card:hover img {
+    transform: scale(1.05);
+}
+
+/* CONTENT */
+.event-content {
+    width: 50%;
+}
+
+.event-content h2 {
+    font-size: 36px;
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.event-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.event-content a {
+    text-decoration: none;
+    padding: 12px 30px;
+    border: 1px solid gold;
+    color: gold;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.event-content a:hover {
+    background: gold;
+    color: black;
+}
+
+/* CTA */
+.celebrate-cta {
+    background-color: #030202;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.celebrate-cta h2 {
+    font-size: 32px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.celebrate-cta p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #bbb;
+}
+
+.celebrate-cta a {
+    text-decoration: none;
+    padding: 14px 36px;
+    background: gold;
+    color: black;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.celebrate-cta a:hover {
+    background: white;
+}
+.footer {
+    background-color: #000;
+    color: #ccc;
+    padding: 60px 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Footer Boxes */
+.footer-box {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-logo {
+    color: gold;
+    letter-spacing: 4px;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-box h3 {
+    color: gold;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #bbb;
+}
+
+/* Links */
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: gold;
+    padding-left: 5px;
+}
+
+/* Newsletter */
+.newsletter {
+    display: flex;
+    margin-top: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 70%;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+    padding: 10px;
+    border: none;
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: white;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 40px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+}
+
+
+
+
+
+
+
+

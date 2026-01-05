@@ -1,0 +1,76 @@
+/* Headings */
+.header-headings {
+    text-align: center;
+    margin-bottom: -12px;
+    font-weight: 700;
+}
+
+#header1 {
+    font-size: 19px;
+}
+
+h2 {
+    color: rgb(5, 107, 147);
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Logo */
+.logo {
+    width: 110px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Text styles */
+.regular,
+.rollnumber {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Layout */
+.headings2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.maincontent {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Tables */
+.table1 {
+    border-spacing: 15px;
+}
+
+.table-bold-data {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.table2,
+.table3 {
+    margin-top: 20px;
+}
+
+/* Photo */
+.photo {
+    width: 120px;
+    height: 140px;
+    border: 2px solid #000;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}

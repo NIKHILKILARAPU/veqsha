@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.headers{
+    display: flex;
+    background-color: orange;
+    width: 100%;
+    border: 1px solid red;
+    padding: 10px;
+    justify-content: space-between;
+}
+.collegelogo{
+    width: 50px;
+
+}
+.home,.about,.gallery{
+    text-decoration: none;
+    margin-top:20PX ;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20;
+    font-weight: bolder;
+}
+.hero{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+}
+.mrq{
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.vision{
+    margin-left: 50px;
+}
+.title{
+    background-image: url("collegeimg.jpg");
+    width: 60%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.collegetitle{
+    font-size: 50;
+    font-weight: bold;
+}
+.collegelocation{
+    font-size: 25;
+    font-weight: bold;
+}
+.quote{
+    font-size: 40;
+    color: orange;
+}
+.classrooms{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.classblock{
+    width: 250px;
+    height: 125px;
+    border: 2px solid black;
+    transition: .3s all ease-out; 
+    border-radius: 10px;
+    
+}
+.classblock:hover{
+    border: 2px solid orange;
+    transform: scale(1.1);
+}
+.footer{
+    background-color: orange;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+
+}

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="pinvalidation.css">
+    </head>
+    <body>
+        <input type="password" placeholder="Enter your PIN" maxlength="4" inputmode="numeric" pattern="[0-9]*" id="pin">
+        <p id="result" style="color: red;"></p>
+        <button onclick="validate()">Submit</button>
+    </body>
+    <script>
+        function validate(){
+    var pin=document.getElementById("pin").value;
+    if(pin.trim()===""){
+        document.getElementById("result").innerHTML="PIN cannot be empty";
+    }
+    else if(pin==="1234"){
+        document.getElementById("result").style.color="green";
+        document.getElementById("result").innerHTML="PIN is valid";
+        window.location.href="balance.html";
+     
+    }
+    else{
+           document.getElementById("result").innerHTML="Invalid PIN";
+    }
+}
+    </script>
+</html>

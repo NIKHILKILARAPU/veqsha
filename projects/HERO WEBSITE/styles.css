@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------------- HEADER ---------------- */
+.header {
+  width: 100%;
+  background-color: rgb(96, 95, 95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.pic {
+  width: 100%;
+  height: 100vh;
+  background-image: url("ranbir.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slideInFade 1.2s ease-out forwards;
+}
+
+@keyframes slideInFade {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.quote {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signature {
+  font-family: "Whisper", cursive;
+  font-size: 90px;
+}
+
+/* ---------------- ABOUT SECTION ---------------- */
+.aboutus {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(61, 61, 61);
+  padding: 40px 20px;
+  transition: background-color 0.4s ease;
+}
+
+
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.matter {
+  max-width: 800px;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #eaeaea;
+}
+
+.education {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+}
+
+.educationmatter {
+  max-width: 900px;
+  margin: 15px auto;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #eaeaea;
+}
+
+/* ---------------- IMAGE SECTION ---------------- */
+.img2Div {
+  width: 100%;
+  height: 100vh;
+  background-image: url("ranbir2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideUpFade 1.5s ease-out forwards;
+}
+
+@keyframes slideUpFade {
+  from {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.quote2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* ---------------- TIMELINE ---------------- */
+.timeline {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(61, 61, 61);
+  padding: 40px;
+  transition: background-color 0.4s ease;
+  animation: slideOnFade 1.5s ease-out forwards;
+}
+
+
+
+@keyframes slideOnFade {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.timelinematter {
+  font-size: 20px;
+  color: #eaeaea;
+  margin-top: 10px;
+}
+
+/* ---------------- CONTACT ---------------- */
+.contactus {
+  padding: 30px;
+  background-color: rgb(61, 61, 61);
+  transition: background-color 0.4s ease;
+}
+
