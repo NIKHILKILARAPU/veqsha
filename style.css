@@ -275,4 +275,47 @@
                 text-align: center
             }
         }
-       
+       #others {
+    max-width: 800px;
+    margin: auto;
+}
+
+.others-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.others-list li {
+    position: relative;
+    padding-left: 26px;
+}
+
+/* neon dot */
+.others-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--neon);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.others-list a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.others-list a:hover {
+    color: var(--neon);
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.6);
+}
+
+.others-list li:hover::before {
+    transform: translateX(6px);
+    opacity: 1;
+}
